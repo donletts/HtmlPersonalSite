@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Don's Personal Site</title>
+    <style type="text/css">
+        hr {
+            border: none;
+            border-top: 3px double #333;
+            color: #333;
+            overflow: visible;
+            text-align: center;
+            height: 5px;
+        }
+
+        hr:after {
+            background: #fff;
+            content: '§';
+            padding: 0 4px;
+            position: relative;
+            top: -13px;
+        }
+
+        img.resize {
+            max-width: 349px;
+            max-height: 446px;
+        }
+        table{
+            border-spacing: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <img alt="donald profile picture"
+                     class="resize"
+                     src="images/donaldLetts.jpg">
+            </td>
+            <td>
+                <h1>Donald Letts</h1>
+                <p><em>Software Engineer</em></p>
+
+                <p>I am currently employed at <strong><a href="http://www.lockheedmartin.com">Lockheed
+                    Martin</a></strong>
+                    in support of Guidance, Navigation and Control (GNC) and Embedded Flight Software. I have 10 years
+                    of experience
+                    supporting the Satellite Operations Center as mission controller and shift supervisor during launch
+                    and early orbit operations. I have 3 years of experience maintaining software and providing user
+                    support
+                    for the real-time telemetry software and 3 years of experience maintaining and supporting
+                    the orbit analysis software.</p>
+                <p>I have 5 years of experience as the lead developer, product owner and scrum master for the rewrite of
+                    the orbit analysis software.</p>
+                <p>I ❤️ coffee ☕, ‍climbing rocks 🧗 and scrambling around in the mountains⛰️. I have climbed the 3000ft
+                    <a href="https://en.wikipedia.org/wiki/El_Capitan">El Capitan</a> in <strong><a
+                            href="http://www.nps.gov/yose">Yosemite
+                        National Park</a></strong>, 3 times spending a total of 10 days on the wall</p>
+                <p>I am currently spending my time trying to keep a
+                    <span id="birthdayDifference"/>
+                    <script>
+                        let birthDate = Date.parse ( "01/24/2020 21:47" );
+                        let currentDate = Date.now ();
+
+                        let millisecondsToSeconds = 1 / 1000;
+                        let secondsToMinutes = 1 / 60;
+                        let minutesToHours = 1 / 60;
+                        let hoursToDays = 1 / 24;
+                        let daysToWeeks = 1 / 7;
+
+                        let difference = Math.floor ( (
+                                currentDate - birthDate
+                            )
+                            * millisecondsToSeconds
+                            * secondsToMinutes
+                            * minutesToHours
+                            * hoursToDays
+                            * daysToWeeks );
+
+
+                        document.getElementById ( 'birthdayDifference' ).innerHTML = difference.toString ();
+                        // console.log ( difference.toString () );
+                    </script>
+                    week old alive, which is proving to be more
+                    challenging than all of my software development challenges and climbing El Capitan combined
+                </p>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h3>Skills</h3>
+    <table>
+        <tr>
+            <td>C#/.Net/Wpf Desktop Application Development</td>
+            <td>⭐⭐⭐⭐⭐</td>
+        </tr>
+        <tr>
+            <td>Big Wall Rock Climbing</td>
+            <td>⭐⭐⭐</td>
+        </tr>
+        <tr>
+            <td>Web Development</td>
+            <td>⭐</td>
+        </tr>
+        <tr>
+            <td>Caring for an infant</td>
+            <td>-⭐</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h3>Professional Interests</h3>
+    <p>Specializing in desktop application development in support of computational science (numerical
+        and analytical applications)</p>
+    <p>I believe in software development best practices as a way to create sustainable and maintainable code</p>
+    <ul>
+        <li>Software design patterns</li>
+        <li>Unit, Integration and System tests specifically <a href="http://http://www.tarlinder.net/">Developer
+            Testing</a></li>
+        <li>Continuous development and continuous deployment</li>
+    </ul>
+
+    <hr>
+
+    <h3>Work Experience</h3>
+    <table>
+        <tr>
+            <td>Dec 2010 – Apr 2014</td>
+            <td>Software Engineer</td>
+            <td>Lockheed Martin</td>
+            <td>
+                <ul>
+                    <li>Was the Software Developer for the Mission Analysis Software (MAS) suite of flight dynamics
+                        tools. The MAS suite provides analysis of orbital dynamics problems pertaining to satellite
+                        orbit
+                        propagation and determination, station-keeping and apogee insertion maneuvers, close approach
+                        screening and collision avoidance, and spacecraft end-of-life studies. The MAS suite is used for
+                        the
+                        purpose of mission design, transfer orbit control, and geosynchronous orbit control of
+                        three-axis
+                        stabilized spacecraft.
+                    </li>
+                    <li>Assigned duties include the full lifecycle of software maintenance, development and user support
+                        during critical phases of the satellite transfer orbit. Used ClearCase as the Software
+                        Configuration Management (SCM) system for release and build version control and the
+                        SunStudio/Solaris development tool suite, the C programming language and MOTIF user
+                        interface.
+                    </li>
+                    <li>Inherited the MAS software when a senior staff developer retired after ~20 years of working on
+                        the project. Quickly picked up and developed an understanding of the ~400K lines of legacy
+                        C/MOTIF code. Facilitated three major software releases for large scale, geo and low earth orbit
+                        satellites. All of the software releases followed the Lockheed Martin Common Integrated Process
+                        System (CIPS) and maintained a CMMI level 3 maturity level. Lockheed Martin’s CIPS is a
+                        characterized and proactive approach to software development.
+                    </li>
+                    <li>Petitioned the proposal group and developed a formal statement of work to use the MAS suite for
+                        new commercial bids. As a result of my proposal work, the MAS suite is currently being reviewed
+                        by a large premium satellite operator with a global customer base to be used as their primary
+                        orbital mechanics software.
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Mar 2009 – Aug 2010</td>
+            <td>Software Engineer Asc</td>
+            <td>Lockheed Martin</td>
+            <td>
+                <ul>
+                    <li>Provided software development support for the Satellite Telemetry Analysis and Real-Time
+                        System (STARS). The STARS ground software provides complete Satellite operations capability for
+                        real-time monitoring and telemetry processing for transfer and on station satellite operations.
+                    </li>
+                    <li>The STARS development team utilized Visual C++ using the Microsoft Visual Studio programming
+                        environment.
+                    </li>
+                    <li>Joined the project in the early stage of the software’s maturity level and quickly picked up
+                        the ~80k lines of code and immediately made an impact on the development cycle. Spent time
+                        debugging software problem reports, and developing enhancements. As added support, completed
+                        scripting projects in Visual Basic, Perl as well as the Unix shell. Also supported automated
+                        satellite operations procedure development using the ISI ground system.
+                    </li>
+                    <li>While working on the STARS project, helped bring the system from an early beta product to a
+                        piece of software now used on 5 transfer orbit missions and long term operations for two
+                        commercial satellite customers.
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Oct 2008 – Mar 2009</td>
+            <td>Satellite Systems Engr Asc</td>
+            <td>Lockheed Martin</td>
+            <td>
+                <ul>
+                    <li>Supported the A2100x Satellite Operations Center (ASOC). The A2100 satellite series currently
+                        consists of 37 commercial communication satellites featuring 1400 transponders with an
+                        accumulated lifetime of over 11,000 years of successful operations in orbit. The Lockheed Martin
+                        A2100 geosynchronous spacecraft series is designed to meet a wide variety of telecommunications
+                        needs including Ka-band broadband and broadcast services, fixed satellite services in C- and
+                        Ku-band, high-power direct broadcast services using the Ku-band frequency spectrum and mobile
+                        satellite services using UHF, L-, and S-band payloads.
+                    </li>
+                    <li>Joined the operations team during a critical shortage in labor following the failure of the
+                        upper stage of the Proton rocket during the AMC-14 launch.
+                    </li>
+                    <li>Over the course of the first 6 months at Lockheed Martin, trained rigorously with the operations
+                        team while assisting in just fewer than 300 low-thrust orbit raising maneuvers for the AMC-14
+                        relocation. During this time also supported long term operations for 5 other geosynchronous
+                        A2100x and S7000 satellites, performing station keeping maneuvers, commanding, ranging and
+                        telemetry monitoring. Regularly filled gaps in labor supporting larger missions as shift
+                        supervisor, mission controller and mission operator during Bus and Payload in-orbit test and
+                        station relocation before customer handover on a 24/7 rotating schedule.
+                    </li>
+                    <li>Actions resulted in the successful completion of the AMC-14 relocation, as well as 6 commercial
+                        and government satellite launches and error-free long-term operations and customer support for a
+                        fleet of over 20 satellites.
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>May 2008 – Oct 2008</td>
+            <td>Summer Student Networking Associate</td>
+            <td>Haverford College</td>
+            <td>
+                <ul>
+                    <li>Worked in the college’s networking department, which provides the community with technology
+                        resources supporting the operational success of the College.
+                    </li>
+                    <li>Joined the project during the science department's creation of a new linux lab. The department
+                        was struggling to keep their lab up to date.
+                    </li>
+                    <li>Was responsible for designing and implementing a UNIX based, thin client environment with ldap
+                        authentication, supporting the scientific computing lab. Also, set up an intra-campus apache
+                        server and an instance of WeBWorK, an open-source online homework system, for the math
+                        department.
+                    </li>
+                    <li>These solutions were immediately welcomed by the college’s math and science departments.</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h3>Education</h3>
+    <ul>
+        <li><a href="http://www.haverford.edu">Haverford College</a></li>
+        <ul>
+            <li>Bachelor of Science (BS) in <a href="https://www.haverford.edu/computer-science">Computer Science</a>
+            </li>
+            <li>2004 – 2008</li>
+            <li>Activities and Societies: Cross Country, Track and Field</li>
+            <li>My senior thesis was a project and paper titled "A Discussion of Dynamic Programming Languages:
+                Implications of Static Optimizations to a Subset of Python." I presented it at the Mid-Atlantic Student
+                Workshop on Programming Languages and Systems in the Spring of 2008.
+            </li>
+            <li>Relevant Courses at Haverford:</li>
+            <ul>
+                <li>Introduction to Computer Science</li>
+                <li>Introduction to Data Structures</li>
+                <li>Analysis of Algorithms</li>
+                <li>Compiler Design</li>
+                <li>Computer Graphics</li>
+                <li>High Performance Scientific Computing</li>
+                <li>Principles of Computer Organization</li>
+                <li>Operating Systems</li>
+                <li>Principles of Programming Languages</li>
+                <li>Theory of Computation</li>
+            </ul>
+        </ul>
+        <li><a href="https://www1.villanova.edu/university.html">Villanova University</a></li>
+        <ul>
+            <li>Continuing education in <a href="https://www1.villanova.edu/villanova/artsci/computerscience.html">Computer
+                Science</a></li>
+            <li>Relevant Courses at Villanova:</li>
+            <ul>
+                <li>Artificial Intelligence</li>
+                <li>Computer Networks</li>
+                <li>Data Mining and Database Programming</li>
+                <li>Database Systems</li>
+                <li>Object Oriented Design and Programming</li>
+                <li>Programming Languages Systems</li>
+                <li>Programming - UNIX & C.</li>
+                <li>User/System Interface</li>
+            </ul>
+        </ul>
+        <li><a href="https://www.udemy.com/">Udemy</a></li>
+        <ul>
+            <li><a href="https://www.udemy.com/course/the-complete-web-development-bootcamp">The Complete Web
+                Development Bootcamp</a></li>
+        </ul>
+    </ul>
+
+    <hr>
+
+    <h3>Honors & Awards</h3>
+    <ul>
+        <li>Communication Satellite Solutions Employee Of The Month - June 2019</li>
+        <li>5 time Division 3 Cross Country and Track All-American</li>
+        <li>Haverford College Varsity Cup</li>
+        <li>High School Division 1 Cross Country All-State</li>
+        <li>Eagle Scout</li>
+    </ul>
+    <hr>
+    <a href="hobbies.html">My Hobbies</a>
+<!--    <br/>-->
+    <a href="contact-me.html">Contact Me</a>
+</body>
+</html>
+
