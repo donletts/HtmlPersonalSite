@@ -1,0 +1,45 @@
+hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-color: #5d5b6a;
+    border-width: 5px;
+
+    width: 10%;
+    overflow: visible;
+    text-align: center;
+}
+
+hr:after {
+    color: #5d5b6a;
+    content: '§';
+    /*padding: 0 1px;*/
+    position: relative;
+    top: -13px;
+}
+
+img.resize {
+    max-height: 446px;
+}
+
+img.circular {
+    border-radius: 100%;
+}
+
+table{
+    border-spacing: 10px;
+}
+
+body{
+    background-color: #f5cdaa;
+}
+h1, h2, h3, h4, h5, h6{
+    color: #5d5b6a;
+}
+a{
+    color: #758184;
+    border: none;
+}
+a:visited{
+    color: #92babd;
+: none;
+}
